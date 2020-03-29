@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/balance"
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:background="#52C34A"
+        android:gravity="center" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/Date"
+            android:layout_width="100dp"
+            android:layout_height="66dp"
+            android:hint="date"
+            android:inputType="textMultiLine" />
+
+        <EditText
+            android:id="@+id/Price"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:hint="price"
+            android:inputType="textMultiLine" />
+
+        <EditText
+            android:id="@+id/Item"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:hint="item"
+            android:inputType="textMultiLine" />
+        <Button
+            android:id="@+id/Add"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="+" />
+        <Button
+            android:id="@+id/Sub"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="-" />
+    </LinearLayout>
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#007A85"
+        android:gravity="center"
+        android:text="History" />
+
+    <TextView
+        android:id="@+id/history"
+        android:layout_width="match_parent"
+        android:layout_height="354dp" />
+</LinearLayout>
